@@ -1,5 +1,6 @@
 a{
 text-decoration: none;
+color: inherit;
 }
 
 
@@ -35,4 +36,21 @@ padding-left: 25px;
 
 footer {
 	text-align: center;
+}
+
+.homepage2
+{
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size:100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-size: cover;
 }
