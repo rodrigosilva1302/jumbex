@@ -1,0 +1,29 @@
+{
+  "name": "Jumbex",
+  "short_name": "Jumbex",
+  "icons": [
+    {
+      "src": "jbx.png",
+      "sizes": "16x16"
+    }
+  ],
+  "description": "MVP Jumbex"
+}
+-----
+{
+  "name": "Jumbex App",
+  "short_name": "Jumbex",
+  "start_url": "jumbex.com.br",
+  "display": "minimal-ui",
+  "background_color": "#E3411D",
+  "theme_color": "#E3411D",
+  "icons": [
+    {
+      "src": "jbx.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+
+  ],
+  "description": "MVP da Jumbex."
+}
