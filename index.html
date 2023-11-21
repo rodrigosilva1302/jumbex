@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Jumbex | Sua parceira neste momento difícil</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="jbx.ico">
+  <meta name="theme-color" content="#E34010">
+  <script src="script.js"></script>
+  <script src="service-worker.js"></script>  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(registration => {
+            console.log('Service Worker registrado com sucesso!', registration);
+          })
+          .catch(error => {
+            console.error('Falha ao registrar o Service Worker:', error);
+          });
+      });
+    }
+  </script>
+</head>
+<body>
+    <div class="container">
+    <header>
+      <h1>Olá! Bem-vindo à</h1>
+      <div class="logo">
+        <img src="jumbexlogo1.gif" srcset="
+        jumbexlogo1.gif 3x 960w,
+        jumbexlogo2.gif 2x 640w,
+        jumbexlogo3.gif 1x 320w
+        ">
+        <div id="search-container">
+        <input type="text" class="search-bar" placeholder="Pesquise na Jumbex" onkeydown="verificarTecla(event)">
+        <img src="lupa.png" alt="Pesquisa" width="30" height="30" onclick="pesquisaGoogle()">
+      </div>
+    </header>
+    <main>
+      <div class="links">
+        <a class="bt-CAF" href="LINKCAF">
+          <img class="img-hover" src="caf.gif" alt="Apoio aos Familiares" style="border: 6px solid #000; border-radius: 10%;" width="340" height="490">
+        </a>
+        <a class="bt-jumbo" href="LINKjumbo">
+          <img class="img-hover" src="jumbo.gif" alt="Venda Jumbo" style="border: 6px solid #000; border-radius: 10%;" width="340" height="490">
+        </a>
+      </div>
+      <div class="links">
+        <a class="bt-docs" href="LINKdocs">
+          <img class="img-hover" src="docs.gif" alt="Documentação" style="border: 6px solid #000; border-radius: 10%;" width="340" height="490">
+        </a>
+        <a class="bt-shop" href="LINKEshop">
+          <img class="img-hover" src="shop.gif" alt="Shop" style="border: 6px solid #000; border-radius: 10%;" width="340" height="490">
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <div class= "canais">
+        <h3>Siga Nossas Redes Sociais</h3>
+        <ul class="rs">
+          <li><a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt="Facebook" width="70" height="70"></a></li>
+          <li><a href="https://instagram.com" target="_blank"><img src="instagram.png" alt="Instagram" width="70" height="70"></a></li>
+          
+        </ul>
+      </div>
+      <h3>Atendimento Pelo Telefone</h3>
+      <div class="tel">
+        <a href="https://img.freepik.com/vetores-gratis/ilustracao-de-suporte-ao-cliente_24908-61541.jpg?w=740&t=st=1700439523~exp=1700440123~hmac=a6d63d145831a7a87ee3b554988a55d3e6b126977b6e99cc0762c98381de9d5e" target="_blank">
+          <img src="phone.png" alt="TELEFONE" width="70" height="70"></a> <a href="https://img.freepik.com/vetores-gratis/ilustracao-de-suporte-ao-cliente_24908-61541.jpg?w=740&t=st=1700439523~exp=1700440123~hmac=a6d63d145831a7a87ee3b554988a55d3e6b126977b6e99cc0762c98381de9d5e" target="_blank">| (11) 9XXXX-XXXX </a>
+      </div>
+
+      <div class= "qs">
+      <a href="https://jumbex/quemsomos.com"> <h4>Quem Somos</h4>
+      <h5>- JumboExpress (Beta) -</h5></a>
+    </div>
+    </footer>
+  </div>
+</body>
+</html>
