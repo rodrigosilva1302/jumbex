@@ -1,0 +1,221 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #e6e6fa;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	max-width: 100%;
+	margin: auto;
+}
+
+img {
+	max-width: 100%;
+	
+}
+
+button {
+	cursor: pointer;
+	font-family: "Times New Roman", Times, serif;
+}
+
+body> header {
+	background: #E34010;
+	font-size: 30px;
+	padding-top: 20px;
+	font-size: 35px;
+
+}
+
+header a {
+	padding-left: 20px;
+	text-decoration: none;
+	color: black;
+}
+
+body> header img {
+ margin-right: 1000px;
+}
+
+main .page-title{
+	font-size: 40px;
+	padding-top: 40px;
+	padding-left: 50px;
+	padding-bottom: 5px;
+}
+
+.page-title img {
+ 	width: 400px;
+	height: auto;
+	text-align: right;
+}	
+
+section {
+	flex: 1;
+	margin-left: 2px;
+	max-width: 100%;
+}
+
+h1 {
+	max-width: 100%;
+	font-size: 45px;
+	text-align: left;
+	margin-left: 30px;
+
+
+}
+
+h2 {
+	text-align: center;
+}
+
+h4 {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+input {
+	width: 35px !important;
+	height: 35px;
+	margin-left: 8px;
+}
+
+
+.formLista li {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  line-height: 40px;
+
+}
+
+.formLista li img {
+	max-width: 62%%;
+  vertical-align: middle; 
+  margin-bottom: 15px;
+  border-radius: 5%;
+  border: 1px solid;
+  text-align: center;
+  
+}
+
+.category1 {
+	max-width: 100%;
+	max-width: 100%;
+	border: 2px solid #ccc;
+	background: #c0c0c0;
+	margin-bottom: 20px;
+	border-radius: 5%;
+
+	
+}
+
+
+.subcategory {
+	padding-bottom: 10px;
+	max-width: 100%;
+
+
+}
+
+.formLista {
+margin-left: 40px;
+font-size: 25px;
+max-width: 100%;
+
+}
+
+.formLista ul {
+	list-style: none;
+	max-width: 100%;
+	margin: auto;
+
+}
+
+aside {
+	margin-left: 30px;
+	border-radius: 5%;
+	text-align: center;
+
+}
+
+aside img {
+	 width: 150px;
+	 height: 50px;
+	 border-radius: 5%;
+	 border: 2px solid;
+}
+
+aside .box {
+   	margin-bottom: 15px;
+    border: 2px solid #eee;
+    background: #ddd;
+    border-radius: 5%;
+    border: 2px solid;
+
+}
+
+aside .box header {
+	padding: 15px 10px;
+	font-size: 30px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+
+}
+
+aside .box footer {
+	padding: 15px 20px;
+	font-size: 25px;
+	background: #ccc;
+
+
+}	
+
+aside .box footer div {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+aside button {
+	border: 0;
+	padding: 15px 0;
+	color: white;
+	background: forestgreen;
+	display: block;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 22px;
+	border-radius: 5%;
+	border: 1px solid black;
+}
+
+aside button:hover { 
+	background: #28a745;
+
+}
+
+.fixed-aside {
+  position: fixed;
+  top: 10px; /* Ajuste a posição conforme necessário */
+  right: 20px; /* Ajuste a posição conforme necessário */
+  width: 250px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 3px solid;
+}
+
+#finalizar {
+	margin-bottom: 20px;
+}
+
+#ps {
+	font-size: 20px;
+	border-bottom: 1px solid;
+	border-top: 1px solid;
+}
+
+.pcategory {
+	color: blue;
+}
