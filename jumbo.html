@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Jumbex | Jumbo</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <img src="jumboheader.gif">
+    </header>
+    <main>
+        <div class="page-title">
+           <img src="marc.gif">           
+        </div>
+
+        <div class="content">  
+        <section>
+          <div class="categoriageral">
+                <h1>Produtos de Higiêne</h1>
+            <div class="category1">
+                <label><h2>Sabonetes</h2> <h4>(apenas 2 unidades por jumbo)</h4></label>
+                <div class="subcategory">
+                    <form class="formLista">
+                        <ul>
+                      <li>  <input type="checkbox" id="form1_item1" name="form1_item" value="1- Sabonete Albany" data-valor="1.55" data-peso="0.85"><label for="form1_item1"><img src="albany.png"></label></li>
+
+                        <li>  <input type="checkbox" id="form1_item1" name="form1_item" value="1- Sabonete Albany" data-valor="1.55" data-peso="0.85"><label for="form1_item2"><img src="albany.png"></label></li>
+
+                        <li><input type="checkbox" id="form1_item3" name="form1_item" value="Item 2" data-valor="8.25" data-peso="3.10"><label for="form1_item3"><img src="logo.png">Item 2</label></li>
+
+                        <li><input type="checkbox" id="form1_item3" name="form1_item" value="Item 2" data-valor="1000.50" data-peso="5.25"><label for="form1_item4"><img src="logo.png">Item 2</label></li>
+
+                        <li><input type="checkbox" id="form1_item5" name="form1_item" value="Item 3" data-valor="15.75" data-peso="8.30"><label for="form1_item5"><img src="logo.png">Item 3</label></li>
+
+                        <li><input type="checkbox" id="form1_item6" name="form1_item" value="Item 3" data-valor="8.25" data-peso="3.10"><label for="form1_item6"><img src="logo.png">Item 3</label></li>
+                    </ul>
+                    </form>    
+                </div>
+
+
+            </div>
+          </div>  
+        </section>
+        <aside class="fixed-aside">
+            <img src="logo.png">
+            <div class="box">
+                <header>
+                    <b>Sua Compra</b><i class='bx bx-cart-download'></i>
+                </header>
+                <footer>
+                    <b>Valor Total:</b> R$<span id="totalValor">0</span></p>
+    <p><b>Peso Total:</b></p> <p><span id="totalPeso">0</span>Kg</p>
+                    
+                </footer>
+            </div>
+            <button id="finalizar">Finalizar Compra</button>
+            <div id="painel">
+                <span id="ps"><b>Produtos selecionados</b></span>
+                <font color= blue>Higiêne</font>
+
+                <div id="itensSelecionadosTodasFormas"></div>
+            </div>
+        </aside>     
+        </div>
+
+    </main>
+    
+
+   <script>
+    const forms = document.querySelectorAll('.formLista');
+    const listaItensSelecionados = document.getElementById('itensSelecionadosTodasFormas');
+    const totalValorSpan = document.getElementById('totalValor');
+    const totalPesoSpan = document.getElementById('totalPeso');
+
+    forms.forEach(form => {
+      const checkboxes = form.querySelectorAll('input[type="checkbox"]');
+      let selectedCheckboxes = [];
+
+      checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+          if (this.checked) {
+            if (selectedCheckboxes.length < 2) {
+              selectedCheckboxes.push(this);
+            } else {
+              this.checked = false;
+            }
+          } else {
+            const index = selectedCheckboxes.indexOf(this);
+            if (index > -1) {
+              selectedCheckboxes.splice(index, 1);
+            }
+          }
+          mostrarSelecionados();
+        });
+      });
+    });
+
+    function mostrarSelecionados() {
+      let selectedItems = [];
+      let totalValor = 0.00;
+      let totalPeso = 0.00;
+
+      forms.forEach(form => {
+        const selectedCheckboxes = Array.from(form.querySelectorAll('input[type="checkbox"]:checked'));
+        selectedItems = selectedItems.concat(selectedCheckboxes.map(checkbox => checkbox.value));
+        totalValor += selectedCheckboxes.reduce((acc, checkbox) => acc + parseFloat(checkbox.getAttribute('data-valor')), 0);
+        totalPeso += selectedCheckboxes.reduce((acc, checkbox) => acc + parseFloat(checkbox.getAttribute('data-peso')), 0);
+      });
+
+      listaItensSelecionados.innerHTML = '';
+
+      selectedItems.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        listaItensSelecionados.appendChild(li);
+      });
+
+      totalValorSpan.textContent = totalValor.toFixed(2);
+      totalPesoSpan.textContent = totalPeso.toFixed(2);
+    }
+
+    // Chamada inicial para exibir itens selecionados ao carregar a página
+    mostrarSelecionados();
+</script>
+
+
+</html>
