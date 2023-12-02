@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <title>Jumbex | Jumbo</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <a href="index.html"><i class='bx bx-home-alt-2'></i> Home</a><img src="jumboheader.gif">
+    </header>
+    <main>
+        <div class="page-title">
+           <img src="marc.gif">           
+        </div>
+
+        <div class="content">  
+            <section>
+                <div class="categoriageral">
+                    <h1>Produtos de Higiene</h1>
+                    <div class="category1">
+                        <label><h2>Sabonetes</h2><h4>(apenas 2 unidades por jumbo)</h4></label>
+                        <div class="subcategory">
+                            <form class="formLista">
+                                <ul>
+                                    <li><img src="albany.png"><input type="checkbox" id="form1_item1" name="form1_item" value="1-Sabonete Albany" data-valor="1.55" data-peso="0.085"><label for="form1_item1"></label></li>
+                                    <li><img src="albany.png"><input type="checkbox" id="form1_item2" name="form1_item" value="1-Sabonete Albany" data-valor="1.55" data-peso="0.085"><label for="form1_item2"></label></li>
+                                    <br><br>
+                                    <li><img src="protex.png"><input type="checkbox" id="form1_item3" name="form1_item" value="1-Sabonete Protex" data-valor="2.35" data-peso="0.85"><label for="form1_item3"></label></li>
+                                    <li><img src="protex.png"><input type="checkbox" id="form1_item4" name="form1_item" value="1-Sabonete Protex" data-valor="2.35" data-peso="0.85"><label for="form1_item4"></label></li>
+                                </ul>
+                            </form>    
+                        </div>
+                    </div>
+                </div>  
+            </section>
+            <aside class="fixed-aside">
+                <img src="logo.png">
+                <div class="box">
+                    <header>
+                        <b>Sua Compra</b><i class='bx bx-cart-download'></i>
+                    </header>
+                    <footer>
+                        <b>Valor Total:</b> R$<span id="totalValor">0</span><br>
+                        <b>Peso Total:</b><span id="totalPeso">0</span>Kg
+                    </footer>
+                </div>
+                <button id="finalizar">Finalizar Compra</button>
+                <div id="painel">
+                    <span id="ps"><b>Sua Lista</b></span>
+                    <p class="pcategory">Higiene</p>
+                    <div id="itensSelecionadosTodasFormas"></div>
+                </div>
+            </aside>     
+        </div>
+    </main>
+    
+    <script src="seu_script.js"></script>
+</body>
+</html>
