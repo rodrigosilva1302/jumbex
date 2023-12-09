@@ -118,40 +118,5 @@ window.addEventListener('beforeunload', function (event) {
   // Cancela o evento padrão de saída da página
   event.preventDefault();
   // Mensagem de confirmação personalizada
-  event.returnValue = 'JUMBEX:Tem certeza que deseja sair da compra do Jumbo? Sua lista pode não ser salva.';
+  event.returnValue = 'JUMBEX:Tem certeza que deseja sair da compra do Jumbo? Sua lista não será salva.';
 });
-
-
-// Função para enviar a lista selecionada para o WhatsApp
-function enviarListaParaWhatsApp() {
-  const itensSelecionados = document.querySelectorAll('input[name="form1_item"]:checked');
-  let mensagem = 'Itens selecionados:\n';
-
-  // Verifica se existem itens selecionados
-  if (itensSelecionados.length > 0) {
-    itensSelecionados.forEach((item, index) => {
-      const valor = item.getAttribute('data-valor');
-      const nomeItem = item.value;
-      mensagem += `${index + 1}. ${nomeItem} - Valor: R$${valor}\n`;
-    });
-
-    const options = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Token': '09709eafa233d3c4901d67369988875bcfa9b497f8a964997163e6d0f4a2b13ef68dcb2d1f4cca97'
-      },
-      body: JSON.stringify({ "phone": "+5512982820090", "message": mensagem })
-    };
-
-    fetch('https://api.wzap.chat/v1/messages', options)
-      .then(response => response.json())
-      .then(response => console.log(response))
-      .catch(err => console.error(err));
-  } else {
-    console.log('Nenhum item selecionado.');
-  }
-}
-
-// Adiciona um evento de clique ao botão "Finalizar Compra" para chamar a função de enviar a lista para o WhatsApp
-document.getElementById('finalizar').addEventListener('click', enviarListaParaWhatsApp);
