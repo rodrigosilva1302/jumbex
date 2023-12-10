@@ -108,3 +108,36 @@ function cancelarEnvio() {
         // Ou você pode adicionar outra lógica aqui, se necessário
     }
 }
+
+function validarCampos() {
+    const nome = document.getElementById('nome').value;
+    const sobrenome = document.getElementById('sobrenome').value;
+    const whatsapp = document.getElementById('whatsapp').value;
+
+    // Verificar se todos os campos estão preenchidos
+    if (nome.trim() === '' || sobrenome.trim() === '' || whatsapp.trim() === '') {
+        alert('Por favor, preencha todos os campos.');
+    } else {
+        validarNumeroWhatsapp(whatsapp);
+    }
+}
+
+function validarNumeroWhatsapp(whatsapp) {
+    // Remover todos os caracteres que não são dígitos para verificar o comprimento do número de telefone
+    const telefoneNumerico = whatsapp.replace(/\D/g, '');
+
+    // Verificar se o campo de número de telefone (WhatsApp) tem 11 dígitos
+    if (telefoneNumerico.length !== 11) {
+        alert('O número de telefone (WhatsApp) deve conter 11 dígitos.');
+    } else {
+        // Se todos os campos estiverem preenchidos e o número do WhatsApp estiver correto, pode prosseguir com o envio do formulário
+        // Aqui você pode adicionar a lógica para enviar os dados para a API ou realizar outras ações necessárias
+        enviarDados(); // Substitua esta chamada de função pelo seu código de envio de dados
+    }
+}
+
+// Função para enviar os dados para a API
+function enviarDados() {
+    // Aqui você pode adicionar o código para enviar os dados para a sua API
+    // Por exemplo, usando fetch ou outro método de envio de dados
+}
