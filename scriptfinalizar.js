@@ -109,6 +109,7 @@ function cancelarEnvio() {
     }
 }
 
+
 function validarCampos() {
     const nome = document.getElementById('nome').value;
     const sobrenome = document.getElementById('sobrenome').value;
