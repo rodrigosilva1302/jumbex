@@ -158,3 +158,4 @@ function finalizarCompra() {
 // Adicionar um evento de clique ao botão "Finalizar Compra"
 const btnFinalizar = document.getElementById('finalizar');
 btnFinalizar.addEventListener('click', finalizarCompra);
+

@@ -1,0 +1,139 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #E34010;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+h1 {
+  font-size: 35px ;
+  padding-top: 60px;
+  color: #ffffff;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  max-width: 80%;
+  margin: auto;
+}
+
+.jumbexlogo {
+  max-width: 100%;
+  height: auto;
+  display: block; 
+  margin: auto;
+  margin-top: 50px;
+}
+
+#search-container {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+  padding-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+
+.search-bar {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  height: 25px;
+  font-size: 20px;
+  outline: none;
+}
+
+#search-container img {
+  cursor: pointer;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  max-width: 100%;
+  margin: auto;
+}
+
+#links img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 60px;
+  border-radius: 40px;
+}
+
+.img-hover {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.img-hover:hover {
+  opacity: 0.5;
+}
+
+#compartilhar {
+  
+  margin-left: 60%;
+  padding-bottom: 60px;
+  color: white;
+}
+
+#canais {
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  max-width: 70%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+#redessociais {
+   max-width: 100%;
+   margin: auto;
+   padding-bottom: 40px;
+
+ }
+
+#redessociais img {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#tel a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#quemsomos {
+  line-height: 0.1; 
+  padding-top: 10px;
+}
+
+#quemsomos a {
+  text-decoration: none;
+  color: #000000;
+ font-weight: bold;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: unset;
+  font-family: font-family: 'Simonetta', sans-serif;
+}
