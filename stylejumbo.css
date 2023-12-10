@@ -1,0 +1,269 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #e6e6fa;
+  font-family: "Arial", sans-serif;
+	font-size: 20px;
+	max-width: 100%;
+	margin: auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	cursor: pointer;
+	font-family: "Times New Roman", Times, serif;
+}
+
+body> header {
+	background: #E34010;
+	padding-top: 20px;
+	font-size: 35px;
+	display: flex;
+  flex-direction: column;  
+}
+
+header a {
+	padding-left: 20px;
+	text-decoration: none;
+	color: black;
+}
+
+header #back {
+	width: 50px;
+  height: 50px;
+}
+
+header #jumboheader {
+	width: 550px;
+  height: 200px;
+}
+
+section {
+	flex: 1;
+	margin-left: 2px;
+	max-width: 100%;
+}
+
+input {
+	width: 35px;
+	height: 35px;
+	margin-left: 8px;
+}
+
+.categoriageral {
+	padding-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-bottom: 15px solid;
+}
+
+.formLista ul {
+  padding-bottom: 40px;
+}
+
+.formLista li {
+  display: flex;
+  align-items: center;
+}  
+
+.formLista li img {
+	max-width: 62%;
+  vertical-align: middle; 
+  margin-bottom: 15px;
+  border-radius: 5%;
+  border: 1px solid;
+  text-align: center;
+  width: 350px;
+  height: 132px; 
+}
+
+.category1 { /* Roupas */
+	max-width: 100%;
+	border: 1px solid #eee;
+	background: #fff;
+	margin-bottom: 20px;
+	border-radius: 5%;
+
+}
+
+.category2 { /* Alimentos */
+	max-width: 100%;
+	border: 2px solid #ccc;
+	background: #F67B2D;
+	margin-bottom: 20px;
+	border-radius: 5%;
+}
+
+.category3 { /* Higiene */
+	max-width: 100%;
+	border: 2px solid #ccc;
+	background: #AEAEED;
+	margin-bottom: 20px;
+	border-radius: 5%;
+}
+
+.category4 { /* Diversos */
+	max-width: 100%;
+	border: 2px solid #ccc;
+	background: #545454;
+	margin-bottom: 20px;
+	border-radius: 5%;
+}
+
+.category5 { /* Papelaria */
+	max-width: 100%;
+	border: 2px solid #ccc;
+	background: #AEEDDE;
+	margin-bottom: 20px;
+	border-radius: 5%;
+}
+
+.category6 { /* Livros */
+	max-width: 100%;
+	border: 2px solid #ccc;
+	background: #C4B639;
+	margin-bottom: 20px;
+	border-radius: 5%;
+}
+
+.especificos {
+	padding-bottom: 10px;
+	max-width: 100%;
+}
+
+.formLista {
+margin-left: 40px;
+font-size: 25px;
+max-width: 100%;
+}
+
+.formLista ul {
+	max-width: 100%;
+	margin: auto;
+}
+
+aside {
+	margin-top: 2px;
+	margin-left: 30px;
+	border-radius: 5%;
+}
+
+.fixed-aside {
+	text-align: center;
+  position: fixed;
+  top: 10px; /* Ajuste a posição conforme necessário */
+  right: 20px; /* Ajuste a posição conforme necessário */
+  width: 350px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  padding-top: 10px;
+  border: 3px solid;
+}
+
+aside img {
+	 width: 250px;
+	 height: 80px;
+	 border-radius: 5%;
+	 border: 2px solid;
+}
+
+aside .box {
+   	margin-bottom: 5px;
+    border: 2px solid #eee;
+    background: #ddd;
+    border-radius: 5%;
+    border: 2px solid;
+}
+
+aside .box header {
+	padding: 5px 10px;
+	font-size: 35px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+}
+
+aside .box footer {
+	padding: 5px 5px;
+	font-size: 30px;
+	background: #ccc;
+}	
+
+aside button {
+	padding: 15px 0;
+	color: white;
+	background: forestgreen;
+	display: block;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 24px;
+	border-radius: 5%;
+	border: 1px solid black;
+}
+
+aside button:hover { 
+	background: #28a745;
+}
+
+#finalizar {
+	margin-bottom: 20px;
+}
+
+#ps {
+	font-size: 35px;
+	border-bottom: 1px solid;
+	border-top: 1px solid;
+}
+
+#painel a{
+	font-size: 25px;
+}
+
+#itensSelecionadosTodasFormas {
+	font-size: 30px;
+	text-align: left;
+  max-height: 700px; /* Altura máxima padrão para telas maiores */
+  overflow-y: auto; /* Mantém a barra de rolagem sempre visível */
+  margin-top: 10px;
+}
+
+#topo {
+	padding-bottom: 20px;
+}
+
+footer {
+ background-color: #E34010; 
+}
+
+#footer-content {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+} 
+
+#footer-content a {  
+  color: black;
+  font-size: 30px;  
+} 
+
+#footer-content img {
+  padding-left: 20px;
+} 
+
+#footer-content .topo {
+	width: 70px;
+  height: 50px;
+}
+
+#rodape {
+  margin: auto;
+}
