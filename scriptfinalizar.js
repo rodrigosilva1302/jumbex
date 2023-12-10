@@ -136,8 +136,22 @@ function validarNumeroWhatsapp(whatsapp) {
     }
 }
 
-// Função para enviar os dados para a API
 function enviarDados() {
-    // Aqui você pode adicionar o código para enviar os dados para a sua API
-    // Por exemplo, usando fetch ou outro método de envio de dados
+    const nome = document.getElementById('nome').value;
+    const sobrenome = document.getElementById('sobrenome').value;
+    const whatsapp = document.getElementById('whatsapp').value;
+
+    // Exibir os dados preenchidos pelo usuário em um prompt de confirmação
+    const confirmacao = confirm(`Por favor, verifique se os dados estão corretos:\n\nNome: ${nome}\nSobrenome: ${sobrenome}\nWhatsApp: ${whatsapp}\n\nOs dados estão corretos?`);
+
+    // Se o usuário confirmar que os dados estão corretos, enviar para a API
+    if (confirmacao) {
+        // Aqui você pode adicionar o código para enviar os dados para a sua API
+        // Por exemplo, usando fetch ou outro método de envio de dados
+        // Substitua este comentário pela lógica de envio de dados
+        console.log('Dados enviados para a API:', { nome, sobrenome, whatsapp });
+    } else {
+        // Se o usuário não confirmar os dados, você pode realizar alguma outra ação ou simplesmente não fazer nada
+        console.log('Envio cancelado pelo usuário.');
+    }
 }
