@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <title>Finalizar Compra</title>
+    <meta name="theme-color" content="#E34010">
+    <link rel="icon" href="jbx.ico">
+    <link rel="stylesheet" type="text/css" href="styleenvio.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body> 
+    <header>
+       <img src="logo.png">.com.br
+    </header>
+
+    <main>
+        <form id="formEnvio" action="https://formsubmit.co/jumbex.jumboexpress@gmail.com" method="POST">
+            <!-- Campos ocultos para enviar informações -->
+            <input type="hidden" id="detalhesCompraInput" name="detalhesCompra">
+            <input type="hidden" id="nomeInput" name="nome">
+            <input type="hidden" id="sobrenomeInput" name="sobrenome">
+            <input type="hidden" id="whatsappInput" name="whatsapp">
+            <input type="hidden" name="_captcha" value="false">
+
+
+            <!-- Botão de envio -->
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="detalhesEnvio">
+            <!-- Aqui você pode exibir detalhes de envio, se necessário -->
+        </div>
+
+    </main>
+
+    <footer>
+        <img src="rodape.png">
+    </footer>
+
+    <script src="scriptenvio.js"></script>
+
+    </body>
+</html>
