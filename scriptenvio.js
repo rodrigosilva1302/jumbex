@@ -29,7 +29,7 @@ document.getElementById('pix').addEventListener('click', function() {
 });
 
 document.getElementById('cartão').addEventListener('click', function() {
-    preencherCamposOcultos('Cartão de Crédito');
+    preencherCamposOcultos('Cartão');
 });
 
 document.getElementById('outras').addEventListener('click', function() {
