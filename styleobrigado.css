@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background: #E34010;
+  
+	font-size: 30px;
+	max-width: 100%;
+	margin: auto;
+	color: black;
+}
+
+header {
+	
+	color: black;
+	padding-bottom: 20px;
+}
+
+header img {
+	max-width: 100%;
+	padding-top: 20px;
+}
+
+main {
+	background: #F9F9F9;
+	text-align: center;
+	padding-bottom: 400px;
+}
+
+img {
+	max-width: 100%;
+	margin: auto;
+}
+
+.conteiner {
+	max-width: 80%;
+	margin: auto;
+}
+ 
+
+.confirm {
+	max-width: 80%;
+	margin: auto;
+	display: flex;
+    justify-content: right;
+}
+
+button {
+    margin-top: 130px;
+    font-size: 40px;
+ 	background: gray;
+ 	width: 300px;
+ 	height: 100px;
+ 	border-radius: 25px;
+ }
+
+button:hover { 
+	background: #ccc;
+}
+
+footer {
+	
+	font-family: 'Time News';
+	font-size: 30px;
+	text-align: center;
+}
+
