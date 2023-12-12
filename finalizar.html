@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <title>Finalizar Compra</title>
+    <meta name="theme-color" content="#E34010">
+    <link rel="icon" href="jbx.ico">
+    <link rel="stylesheet" type="text/css" href="stylefinalizar.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body> 
+<header>
+       <img src="logo.png">.com.br
+</header>
+
+<main>  
+    <div class="container">            
+        
+      
+        <form id="formularioContato" onsubmit="enviarInformacoes(event)">
+            <h1>Informe Seus Dados</h1>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        
+            <label for="nobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" required>
+         
+            <label for="whatsapp"><img src="whats.png">WhatsApp:</label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 9 9999-99999" required> 
+            <h5>(DDD sem o zero)</h5>
+        
+              <h2>Dados do Famliar Privado da Liberdade</h2>
+      
+       
+            <label for="nomerecluso">Nome do Seu familiar:</label>
+            <input type="text" id="Nome do Seu familiar" name="Nome do Seu familiar" required>
+        
+            <label for="opcoes">Escolha a Unidade Prisional:</label>
+                <select id="opcoes" name="opcoes">
+                      <option value="opcao0">--  --</option>
+                      <option value="opcao1">Penitenciaria de Araraquara</option>
+                      <option value="opcao2">Penitenciaria Pracinha</option>
+                      <option value="opcao3">Penitenciaria de Ribeirão Preto</option>
+                      <option value="opcao4">Penitenciaria de Lavinia</option>
+                </select>
+
+            <div class="btn"><input type="submit" value="Enviar"></div>
+        </form>
+    </div> 
+</main>
+
+<footer>
+    <div id="detalhesCompra"></div>
+    <div class="btn2">
+        <input type="button" value="Cancelar" onclick="cancelarEnvio()">
+    </div>
+</footer>
+
+<script src="scriptfinalizar.js"></script>
+</body>
+</html>
